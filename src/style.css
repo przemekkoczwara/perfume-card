@@ -1,4 +1,90 @@
-/* test css */
-body {
-  background-color: green;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--fsize-16);
+}
+
+:root {
+  /* colors */
+
+  --primary-green: hsl(158, 36%, 37%);
+  --secondary-green: hsl(158, 42%, 18%);
+  --background-cream: hsl(30, 38%, 92%);
+  --background-white: hsl(0, 0%, 100%);
+  --text-primary: hsl(212, 21%, 14%);
+  --text-secondary: hsl(228, 12%, 48%);
+
+  /* spacing */
+  --spacing-40: 2.5rem; /*40px*/
+  --spacing-32: 2rem; /*32px*/
+  --spacing-24: 1.5rem; /*24px*/
+  --spacing-16: 1rem; /*16px*/
+  --spacing-8: 0.5rem; /*8px*/
+  --spacing-4: 0.25rem; /*4px*/
+
+  /* font sizes */
+
+  --fsize-32: 2rem;
+  --fsize-16: 1rem;
+  --fsize-14: 0.875rem;
+  --fsize-13: 0.8125rem;
+  --fsize-12: 0.75rem;
+
+  /* font weights */
+
+  --fweight-500: 500;
+  --fweight-700: 700;
+
+  /* line heights */
+
+  --line-height-100: 1;
+  --line-height-110: 1.1;
+  --line-height-120: 1.2;
+  --line-height-160: 1.6;
+}
+
+/* typography */
+
+.fraunces-text {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+  font-weight: var(--fweight-700);
+  font-variation-settings: 'SOFT' 0, 'WONK' 0;
+  font-size: var(--fsize-32);
+}
+
+.montserrat-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--fweight-700);
+  line-height: var(--line-height-110);
+  font-size: var(--fsize-14);
+}
+
+.montserrat-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--fweight-500);
+  line-height: var(--line-height-160);
+  font-size: var(--fsize-14);
+}
+
+.montserrat-spacing {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--fweight-500);
+  line-height: var(--line-height-120);
+  font-size: var(--fsize-12);
+  letter-spacing: 5px;
+}
+.montserrat-line-through {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--fweight-500);
+  line-height: var(--line-height-120);
+  font-size: var(--fsize-13);
+  letter-spacing: 5px;
+  text-decoration: line-through;
 }
